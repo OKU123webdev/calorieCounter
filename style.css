@@ -1,0 +1,432 @@
+
+/* variables */
+:root {
+    --blue: #BAF7FF;
+    --orange: #FFC83A;
+    --yellow: #FFE600;
+}
+
+
+main {
+    font-family: 'Work Sans', sans-serif;
+    width: 100vw;
+}
+
+body {
+    padding: 10vw 0 10vw 0;
+}
+
+h1 {
+    color: var(--orange);
+    text-decoration: underline solid var(--yellow);
+    font-size: 2.5em !important;
+    font-family: 'Reem Kufi Ink', sans-serif;
+  
+}
+
+h2 {
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+/* food page divide line */
+hr.line {
+    border: 2px solid var(--blue);
+    opacity: 1;
+}
+
+
+/* splashscreen */
+.splash {
+        height: 100vh;
+        background-image: -webkit-linear-gradient(135deg, var(--blue) 45%, var(--yellow) 45%);
+    }
+
+#splashWelcome {
+    font-size: 15vw;
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+.ssText1 {
+    font-family: 'Reem Kufi Ink', sans-serif;
+    
+}
+
+.ssText2 {
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+/* splashscreen button */
+
+.splash a {
+    font-weight: 600;
+    font-size: 3vh;
+    
+}
+
+.splashTxt1 {
+    padding-left: 7vw;
+}
+
+.splashTxt2 {
+    padding-left: 15vw;
+}
+
+.splashTxt3 {
+    padding-left: 15vw;
+}
+
+.splash-main{
+    padding-top: 19vh;
+}
+
+
+#goBtn {
+    background-color: var(--orange);
+    padding: 8vw;
+}
+
+
+
+/* navbar */
+
+#navBar { 
+    background-color: var(--orange);
+    width: 100vw;
+}
+
+.navbar-toggler .navbar-toggler-icon { /* change hamburger icon to white */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.navbar-toggler { /* remove border from hamburger icon*/
+    border:none !important;
+}
+
+   
+
+
+
+/*........................................ info page ...............................................*/
+
+/* carousel */
+.carousel-control-next-icon {
+    background-color: grey;
+}
+
+.carousel-control-prev-icon {
+    background-color: grey;
+}
+
+/* accordion */
+
+#accBtn1 {
+    background-color: var(--orange);
+    color: white;
+    border: 1px solid var(--orange);
+}
+
+#accBtn2 {
+    background-color: var(--orange);
+    color: white;
+    border: 1px solid var(--orange);
+}
+
+#accBtn3 {
+    background-color: var(--orange);
+    color: white;
+    border: 1px solid var(--orange);
+}
+
+.accordion-button,
+.accordion-body {
+    border: 1px solid var(--orange);
+}
+
+.accordion-button,
+.accordion-item {
+    color: var(--orange);
+}
+
+/*.................................... contact page .............................*/
+
+#sendBtn {
+    background-color: var(--orange);
+}
+
+#nameIcon {
+    background-color: var(--orange);
+    color: white;
+}
+
+#emailIcon {
+    background-color: var(--orange);
+    color: white;
+}
+#phoneIcon {
+    background-color: var(--orange);
+    color: white;
+}
+#commentsIcon {
+    background-color: var(--orange);
+    color: white;
+}
+
+/*............................ food ..............................*/
+
+/* cards */
+
+#card {
+    border-radius: 30% !important;
+    border: 2px solid var(--yellow);
+}
+
+#cereals {
+    filter: brightness(60%);
+}
+
+#meats {
+    filter: brightness(60%);
+}
+
+#fruit {
+    filter: brightness(60%);
+}
+
+#dairy {
+    filter: brightness(60%);
+}
+
+
+.cardTxt {
+    font-size: 6vh;
+}
+
+#cornCardTxt {
+    font-size:4vh;
+}
+
+
+/*....... search bar ......*/
+.dropbtn {
+    background-color: var(--orange);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: var(--orange);
+  }
+  
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+/*.................................. breads & cereals ..............................*/
+
+.foodImg {
+    width: 15vh !important;
+}
+
+.foodTxt {
+    font-size: 3vh;
+    color: var(--orange);
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+/*................................ footer .................................................*/
+
+/* foot nav */
+
+
+footer{
+    background-color: var(--blue);
+    width: 100vw;
+}
+
+/* footer buttons */
+#backBtn {
+    background-color: var(--orange);
+    font-size: 7vw;
+}
+
+#homeBtn {
+    background-color: var(--orange);
+    font-size: 7vw;
+}
+
+.calCountBtn {
+    background-color: var(--orange);
+    font-size: 7vw;
+}
+
+/*............................. foods .................................*/ 
+
+.card-bold {
+    font-weight: 600 !important;
+}
+
+#cal-info {
+    font-size: 3vh;
+}
+
+.energy-txt {
+    color: white;
+    background-color: gray;
+
+}
+
+.myMeals {
+    color: var(--orange);
+}
+
+#input {
+    width: 30%;
+}
+
+
+
+#inputSize {
+    width: 100%;
+    text-align: center;
+}
+
+
+.selectSize {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+#noodles {
+    filter: brightness(80%);
+    
+}
+
+#pasta {
+    filter: brightness(70%);
+    
+}
+
+#rice {
+    filter: brightness(70%);
+    
+}
+
+#egg {
+    filter: brightness(70%);
+    
+}
+
+#milk{
+    filter: brightness(90%);
+    
+}
+
+#apple{
+    filter: brightness(95%);
+    
+}
+
+#banana{
+    filter: brightness(70%);
+    
+}
+
+#broccoli{
+    filter: brightness(80%);
+    
+}
+
+#beef{
+    filter: brightness(50%);
+    
+}
+
+#chicken{
+    filter: brightness(80%);
+    
+}
+#cod{
+    filter: brightness(70%);
+    
+}
+#crab{
+    filter: brightness(80%);
+    
+}
+#ham{
+    filter: brightness(80%);
+    
+}
+#lobster{
+    filter: brightness(60%);
+    
+}
+
+/*....................... calorie count page ......................*/
+
+.totalCalHead {
+    margin-left: 3%;
+}
+
+#total {
+    font-size: 6vh;
+}
+
+#button1 {
+    display: flex;
+    justify-content: center;
+}
+
+#button2 {
+    display: flex;
+    justify-content: center;
+}
+
+#addFood{
+    font-size: 3vh;
+    width: 90%;
+    
+}
+
+#resetFood {
+    font-size: 3vh;
+    width: 90%;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+
+    <!-- CSS style sheet-->
+    <link rel="stylesheet" href="../style.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- bootstrap accordion -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+    <!-- jquery tags -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- nav bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="navBar">
+            <a class="navbar-brand text-white" href="#">
+                <i class="calCountBtn bi bi-speedometer px-3 py-2 rounded-1"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="../calorieCount.html">Today's Calories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../info.html">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../inspo.html">Inspiration</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            My Meals
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../food.html">Add meals</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="pb-4">
+        <!-- food info section -->
+        <div class="container mt-4">
+            <!-- card 1 -->
+            <div class="card pt-4">
+                <img src="../images/rice-img.jpg" class="card-img rounded-4" alt="Rice" id="rice">
+                <div class="card-img-overlay text-white d-flex">
+                    <h2 class="cardTxt text-center align-self-center mx-auto">RICE</h2>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="card bg-warning container mt-4">
+                <div class="row py-2">
+                    <!-- card title -->
+                    <div class="card-title" id="cal-info">Calorie Information:</div>
+                    <!--left info-->
+                    <div class="col text-center">
+                        <p class="card-title text-white h1" id="portionAmo">420</p>
+                        <p class="card-bold card-text">per 300g</p>
+
+                    </div>
+
+                    <!-- right info -->
+                    <div class="col text-center">
+                        <p class="card-title text-white h1"  id="gramAmo">140</p>
+                        <p class="card-bold card-text">per 100g</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- energy content section -->
+            <div class="row mt-4">
+                <!-- left content -->
+                <div class="col">Energy Content:</div>
+                <!-- right content -->
+                <div class="col">
+                    <p class="energy-txt text-center rounded">Low</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- add to meals section -->
+        <hr class="line">
+        <div class="text-center mb-4">
+            <h2 class="myMeals">ADD TO MY MEALS</h2>
+            <h3>Select size</h3>
+            <!-- select size dropdown -->
+            <div class="selectSize">
+                <select id="inputSize" class="form-control">
+                <option value="portion" selected>per 300g</option>
+                <option value="100">per 100g</option>
+              </select>
+            </div>
+
+            <!-- add/minus buttons -->
+            <div class="col mt-2">
+                <!-- minus button -->
+                <button type="button" class="btn btn rounded-circle bg-warning m-1" id="minus">-</button>
+                <!-- input -->
+                <input class="text-center" type="number" value="0" id="input">
+                <!-- add button -->
+                <button type="button" class="btn btn rounded-circle bg-warning m-1" id="plus">+</button>
+            
+            </div>
+
+            <p id="showCal"></p>
+
+            <!-- add to my meals -->
+            <div class="mb-1 col">
+                <button type="button" class="btn bg-warning" id="rice_addMeals">Add Food</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn bg-warning" id="rice_reset">Reset</button>
+            </div>
+            
+
+        </div>
+
+        
+
+
+    </main>
+
+    <!-- footer -->
+
+    <footer class="fixed-bottom">
+        <div class="footer-nav">
+            <div class="container py-2">
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#" class="nav-back btn text-white" onclick="history.back()">
+                            <i class="bi bi-arrow-90deg-left px-3 py-2 rounded-1" id="backBtn"></i>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="../calorieCount.html" class="nav-home btn text-white">
+                            <i class="bi bi-house px-3 py-2 rounded-1" id="homeBtn"></i>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="../food.html" class="nav-calCount btn text-white">
+                            <i class="calCountBtn bi bi-plus-circle px-3 py-2 rounded-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end -->
+
+
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- script -->
+    <script src="../script.js"></script>
+    <script src="../localStorage.js"></script>
+    
+
+
+</body>
+
+</html>
